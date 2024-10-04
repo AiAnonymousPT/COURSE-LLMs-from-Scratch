@@ -1,14 +1,23 @@
 # LLMs From Scratch
 
 ### Course Overview
-[TODO] Welcome to course LLMs From Scratch. In this course, we will learn how to build a language model from scratch using Python and PyTorch. We will cover the basics of neural networks, including linear layers, activation functions, and loss functions. We will also learn how to train a language model on a dataset of text, and how to use it to generate new text
+Are you relatively technical, interested in Large Language Models, but have yet to dive into the interworkings of these models? Same for us - That's why we created this course.
+
+Topics Covered:
+- Tokenization
+- Embeddings
+- Transformers / Attention Mechanisms
+- Pre-Training LLMs
+- Fine-tuning LLMs
 
 ### Objectives
-[TODO] By the end of this course, you will be able to:
+The goal of this course is that each participant leaves with a granular understanding and ability to manipulate LLMs from architecture design to fine-tuning. We view this as a foundational building block for further research into advanced topics and/or building applications with LLMs.
 
+### Format
+- There is no teacher for this course, rather this is a group study of carefully selected materials. 
+- We will meet once a month in a casual interactive setting to discuss the materials, answer questions, and work on exercises together. We will also use Discourse for inter-meeting discussions.
 
 ### Book [required]
-
 We will be working through a number of resources, most of which are freely available online. However we will be relying heavily on the following required text: 
 - "Build a Large Language Model (From Scratch)" by Sebastian Raschka
 - Available as PDF, EPUB https://www.manning.com/books/build-a-large-language-model-from-scratch
@@ -21,10 +30,29 @@ We will be working through a number of resources, most of which are freely avail
 - Group: Monthly meetings to summarize key insights, review code together, Q&A (each meeting someone will volunteer to present)
 - Discord: chat about any questions/issues/discoveries
 
+### Projects
+- Build a working BPE tokenizer from scratch
+- Experiment with your own custom transformer block with multi-head self attention
+- Pre-train and fine-tune a 1.5B parameter LLM on a publicly available dataset
+- Build GPT-2 entirely from scratch
 
-## Proposed Schedule
 
-### Month 1 (Oct 2024): Introduction and Setup
+
+
+## Proposed Schedule [*Needs to be updated from Notion*]
+
+Proposed Dates
+
+- Meeting 0 [Intro] - Monday Oct 28
+- Meeting 1 [Tok/Emb] - Monday Nov 18
+- Meeting 2 [Attention] - Monday Dec 16
+- Meeting 3 [LLM Arch] - Monday Jan 20
+- Meeting 4 [Pre-training] - Monday Feb 20
+- Meeting 5 [Fine-tuning] - Monday Mar 17
+- Meeting 6 [Project Showcase] - Wed Apr 2
+
+
+### Meeting 0 (Oct 2024): Introduction and Setup
 Materials
 
 - [Beginners] Intro to [LLMs Karpathy video](https://www.youtube.com/watch?v=zjkBMFhNj_g&t=1s&ab_channel=AndrejKarpathy)
