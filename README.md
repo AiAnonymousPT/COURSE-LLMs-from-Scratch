@@ -1,4 +1,4 @@
-# LLMs From Scratch
+# [COURSE] LLMs From Scratch
 
 ### Course Overview
 Are you relatively technical, interested in Large Language Models, but have yet to dive into the interworkings of these models? Same for us - That's why we created this course.
