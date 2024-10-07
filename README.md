@@ -1,9 +1,9 @@
 # [COURSE] LLMs From Scratch
 
 ### Course Overview
-Are you relatively technical, interested in Large Language Models, but have yet to dive into the interworkings of these models? Same for us - That's why we created this course.
+Are you relatively technical, interested in LLMa, but have yet to dive into the interworkings of these models? Are you looking for a structured approach combined with a peer support group? Same for us - that's why we created this course.
 
-Topics Covered:
+Topics we will cover:
 - Tokenization
 - Embeddings
 - Transformers / Attention Mechanisms
@@ -15,7 +15,7 @@ The goal of this course is that each participant leaves with a granular understa
 
 ### Format
 - There is no teacher for this course, rather this is a group study of carefully selected materials. 
-- We will meet once a month in a casual interactive setting to discuss the materials, answer questions, and work on exercises together. We will also use Discourse for inter-meeting discussions.
+- We will meet once a month in a casual interactive setting to discuss the materials, answer questions, and work on exercises together. We will also use Discourse to keep the conversation going in real-time.
 
 ### Book [required]
 We will be working through a number of resources, most of which are freely available online. However we will be relying heavily on the following required text: 
@@ -31,10 +31,10 @@ We will be working through a number of resources, most of which are freely avail
 - Discord: chat about any questions/issues/discoveries
 
 ### Projects
-- Build a working BPE tokenizer from scratch
-- Experiment with your own custom transformer block with multi-head self attention
-- Pre-train and fine-tune a 1.5B parameter LLM on a publicly available dataset
-- Build GPT-2 entirely from scratch
+1) Build a working BPE tokenizer from scratch
+2) Experiment with your own custom transformer block with multi-head self attention
+3) Pre-train and fine-tune a 1.5B parameter LLM on a publicly available dataset
+4) FINAL: Build GPT-2 entirely from scratch, fine-tune for your own usecase 
 
 
 
@@ -44,43 +44,40 @@ We will be working through a number of resources, most of which are freely avail
 Proposed Dates
 
 - Meeting 0 [Intro] - Monday Oct 28
-- Meeting 1 [Tok/Emb] - Monday Nov 18
-- Meeting 2 [Attention] - Monday Dec 16
-- Meeting 3 [LLM Arch] - Monday Jan 20
+- Meeting 1 [Tokenization & Embeddings] - Monday Nov 18
+- Meeting 2 [Transformers & Attention] - Monday Dec 16
+- Meeting 3 [LLM Architecture] - Monday Jan 20
 - Meeting 4 [Pre-training] - Monday Feb 20
 - Meeting 5 [Fine-tuning] - Monday Mar 17
 - Meeting 6 [Project Showcase] - Wed Apr 2
 
 
-### Meeting 0 (Oct 2024): Introduction and Setup
-Materials
+## Course Curriculum
 
+### Meeting 0 (Oct 2024): Introduction and Setup
+### Materials
 - [Beginners] Intro to [LLMs Karpathy video](https://www.youtube.com/watch?v=zjkBMFhNj_g&t=1s&ab_channel=AndrejKarpathy)
 - [Beginners] Python [online course](https://programming-24.mooc.fi/part-1/1-getting-started)
 - [Beginners] [Kaggle ML learning modules](https://www.kaggle.com/learn) (first 6 modules)
-- [Beginners] Pytorch step-by-step Tutorial (add link to notebook)
-- [Beginners] Appendix A: Intro to Pytorch (not enough code)
-- [All] Google [crash course: What are LLMs](https://developers.google.com/machine-learning/crash-course/llm) → align terminologies
-- [All] List of key concepts (add link) → align terminologies
-- [All] Read* Chapters 1 of the Book
-- [All]
-- [All] LLM-Workshop-2024 Video and Repo from SR https://github.com/rasbt/LLM-workshop-2024 (video to be released from Scipy conference)
+- [Beginners] [Deep Learning Fundamentals](https://lightning.ai/courses/deep-learning-fundamentals/): Modules 1-3
+- [Beginners] Course Text Book: Appendix A: Intro to Pytorch
+- [All] Google [crash course: What are LLMs](https://developers.google.com/machine-learning/crash-course/llm)
+- [All] Read: Chapter 1 of the Book
+- [BONUS] LLM-Workshop-2024: [Overview of the Course Textbook in 3 Hours](https://github.com/rasbt/LLM-workshop-2024)
 
 Estimate workload:
 
 - [Beginners] about 20h [Python], 10h [ML] , 10h [PyTorch]
-- [All] 5-10h
-
-Group: Overview plan, setup workflow, align terminologies, Python & Pytorch warmup (train a NN or do a Kaggle challenge for swag)
-
+- [All] 5h
 
 ### Month 2: Nov 2024
-
 Materials
 
 - Chapter 2 Working with Text Data : read and code
-- From NLP to token prediction - a brief history (add link)
+- From NLP to token prediction - [a brief history](https://www.wwt.com/blog/a-brief-history-of-nlp)
 - Watch [Karpathy's video on training a BPE](https://youtube.com/watch?v=zduSFxRajkE) tokenizer from scratch - Do the Colab notebook.
+
+PROJECT: Build a working BPE tokenizer from scratch
 
 Estimate workload: 10-20h
 
@@ -89,42 +86,55 @@ Estimate workload: 10-20h
 
 Materials
 
-- Chapter 3 on Attention mechanism: read and code
-- Watch [Stanford CS25: Karpathy on Transformers](https://www.youtube.com/watch?v=XfpMkf4rD6E&ab_channel=StanfordOnline)
-- Maths behind Attention mechanism explained step by step (add link)
+- Watch
+    - [Stanford CS25: Karpathy on Transformers](https://www.youtube.com/watch?v=XfpMkf4rD6E&ab_channel=StanfordOnline)
+    - [Stanford CS224N NLP with Deep Learning | 2023 | Lecture 8 - Self-Attention and Transformers](https://www.youtube.com/watch?v=LWMzyfvuehA&list=PLoROMvodv4rMFqRtEuo6SGjY4XbRIVRd4&index=9)
+- Read
+    - Chapter 3 on Attention mechanism: read and code
+    - “Attention Is All You Need” ([paper](https://arxiv.org/abs/1706.03762), [discussion](https://www.oxen.ai/blog/arxiv-dives-attention-is-all-you-need))
+    - “A Mathematical Framework for Transformer Circuits” ([paper](https://transformer-circuits.pub/2021/framework/index.html), [discussion 1](https://www.oxen.ai/blog/arxiv-dives-a-mathematical-framework-for-transformer-circuits), [discussion 2](https://www.oxen.ai/blog/arxiv-dives-a-mathematical-framework-for-transformer-circuits-part-two))
+- Bonus: [Vision Transformers](https://www.oxen.ai/blog/arxiv-dives-vision-transformers-vit)
 
-Question: is it ok to separate chapter 3 and 4? I feel like a lot can be said for Attention
+PROJECT: Code your own Transformer block with multi-head self attention
 
-Look for some more resources
 
-Group: TBD
-
-### Mid-term Break: Build a project or demo
-Add 1 month to build something
-
-### Month 4 : Feb 2025
+### Month 4 : Jan 2024
 
 Materials: 
 
-- Chapter 4 on implementing the model architecture.
-- Watch Karpathy's video on pretraining the LLM.
+- Chapter 4 on implementing the model architecture (everything besides tokenization and transformers)
+- Read: [How Mistral 7b Works](https://www.oxen.ai/blog/arxiv-dive-how-to-mistral-7b-works)
 
-Group: TBD
+CATCH-UP: Be sure to finish the BPE and Transformer projects and prior learning materials.
 
 
-### Month 5 : Mar 2025
+### Month 5 : Feb 2025
 
 Materials
 
-- Read Chapter 5 on pre-training the LLM and then loading pretrained weights.
+- Read Chapter 5 on Pre-training the LLM
 - Read Appendix E on adding additional bells and whistles to the training loop.
+- Watch: [Stanford CS224N NLP with Deep Learning | 2023 | Lecture 9 - Pretraining](https://www.youtube.com/watch?v=DGfCRXuNA2w)
+
+PROJECT: Find a GPU and pre-train the example model
 
 
-### Month 6 : Apr 2025
+### Month 6 : Mar 2025
 
 Reading:
 
 - Read Chapters 6 and 7 on fine-tuning the LLM.
 - Read Appendix E on parameter-efficient fine-tuning with LoRA.
+- Read [“New Training Paradigms”](https://magazine.sebastianraschka.com/p/new-llm-pre-training-and-post-training)
+- Bonus: [Fine-tune your own Vision Transformer](https://www.oxen.ai/blog/practical-ml-dive-how-to-customize-a-vision-transformer-on-your-own-data)
 
-Group: TBD
+PROJECT: Fine-tune the example model
+
+
+### Month 7 : Apr 2025
+
+FINAL PROJECT: Build your own GPT2
+
+- Implement all elements of GPT2 from scratch
+- Pre-train the model, then fine-tune to a specific use case
+- Resources: [Karparthy Lets Reproduce GPT2](https://www.youtube.com/watch?v=l8pRSuU81PU&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=10)
