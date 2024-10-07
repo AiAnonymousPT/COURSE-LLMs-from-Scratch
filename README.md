@@ -54,8 +54,8 @@ Proposed Dates
 
 ## Course Curriculum
 
-### Meeting 0 (Oct 2024): Introduction and Setup
-### Materials
+[### Meeting 0 (Oct 2024): Introduction and Setup](Meeting-0/README.md)
+Materials
 - [Beginners] Intro to [LLMs Karpathy video](https://www.youtube.com/watch?v=zjkBMFhNj_g&t=1s&ab_channel=AndrejKarpathy)
 - [Beginners] Python [online course](https://programming-24.mooc.fi/part-1/1-getting-started)
 - [Beginners] [Kaggle ML learning modules](https://www.kaggle.com/learn) (first 6 modules)
