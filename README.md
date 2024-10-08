@@ -5,6 +5,7 @@
 <br>
 <img src="Supporting/Images/AI_today.jpg" alt="AI today" width="60%">
 
+***Don't let this be you!***
 <br>
 
 ### Course Overview
