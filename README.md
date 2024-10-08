@@ -46,10 +46,10 @@ We will be working through a number of resources, most of which are freely avail
 3) Pre-train and fine-tune a 1.5B parameter LLM on a publicly available dataset
 4) FINAL: Build GPT-2 entirely from scratch, fine-tune for your own usecase 
 
+<br>
 
 
-
-## Proposed Schedule [*Needs to be updated from Notion*]
+## Proposed Schedule
 
 Proposed Dates
 
@@ -61,6 +61,7 @@ Proposed Dates
 - Meeting 5 [Fine-tuning] - Monday Mar 17
 - Meeting 6 [Project Showcase] - Wed Apr 2
 
+<br>
 
 
 ## [Meeting 0 (Oct 2024): Introduction and Setup](Meeting-0/README.md)
@@ -79,6 +80,9 @@ Estimate workload:
 - [Beginners] about 20h [Python], 10h [ML] , 10h [PyTorch]
 - [All] 5h
 
+<br>
+
+
 ## Month 2: Nov 2024
 Materials
 
@@ -88,8 +92,7 @@ Materials
 
 PROJECT: Build a working BPE tokenizer from scratch
 
-Estimate workload: 10-20h
-
+<br>
 
 ## Month 3 : Dec 2024
 
@@ -106,6 +109,7 @@ Materials
 
 PROJECT: Code your own Transformer block with multi-head self attention
 
+<br>
 
 ## Month 4 : Jan 2024
 
@@ -116,6 +120,7 @@ Materials:
 
 CATCH-UP: Be sure to finish the BPE and Transformer projects and prior learning materials.
 
+<br>
 
 ## Month 5 : Feb 2025
 
@@ -127,6 +132,7 @@ Materials
 
 PROJECT: Find a GPU and pre-train the example model
 
+<br>
 
 ## Month 6 : Mar 2025
 
@@ -139,6 +145,7 @@ Reading:
 
 PROJECT: Fine-tune the example model
 
+<br>
 
 ## Month 7 : Apr 2025
 
@@ -147,3 +154,5 @@ FINAL PROJECT: Build your own GPT2
 - Implement all elements of GPT2 from scratch
 - Pre-train the model, then fine-tune to a specific use case
 - Resources: [Karparthy Lets Reproduce GPT2](https://www.youtube.com/watch?v=l8pRSuU81PU&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=10)
+
+<br>
