@@ -7,7 +7,7 @@ Are you relatively technical, interested in LLMa, but have yet to dive into the 
 
 ***Don't let this be you!***
 
-<img src="Supporting/Images/AI_today.jpg" alt="AI today" width="35%">
+<img src="Supporting/Images/AI_today.jpg" alt="AI today" width="50%">
 
 ## Course Topics
 - Tokenization
@@ -124,7 +124,7 @@ Materials
 PROJECT: Find a GPU and pre-train the example model
 
 
-### Month 6 : Mar 2025
+## Month 6 : Mar 2025
 
 Reading:
 
