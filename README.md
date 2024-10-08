@@ -2,11 +2,9 @@
 
 # COURSE: LLMs From Scratch
 
-<br>
-<div style="text-align: center;">
-  <img src="Supporting/Images/AI_today.jpg" alt="AI today" width="60%">
-</div>
-<br>
+
+<img src="Supporting/Images/course_logo.png" alt="LLMs From Scratch" width="50%">
+
 
 ### Course Overview
 - Do you use LLMs as part of your work flow but have yet to dive into the interworkings of these models? 
