@@ -1,9 +1,15 @@
-# [COURSE] LLMs From Scratch
+
+
+# COURSE: LLMs From Scratch
 
 ### Course Overview
 Are you relatively technical, interested in LLMa, but have yet to dive into the interworkings of these models? Are you looking for a structured approach combined with a peer support group? Same for us - that's why we created this course.
 
-Topics we will cover:
+***Don't let this be you!***
+
+<img src="Supporting/Images/AI_today.jpg" alt="AI today" width="35%">
+
+## Course Topics
 - Tokenization
 - Embeddings
 - Transformers / Attention Mechanisms
@@ -52,9 +58,8 @@ Proposed Dates
 - Meeting 6 [Project Showcase] - Wed Apr 2
 
 
-## Course Curriculum
 
-### [Meeting 0 (Oct 2024): Introduction and Setup](Meeting-0/README.md)
+## [Meeting 0 (Oct 2024): Introduction and Setup](Meeting-0/README.md)
 Materials
 - [Beginners] Intro to [LLMs Karpathy video](https://www.youtube.com/watch?v=zjkBMFhNj_g&t=1s&ab_channel=AndrejKarpathy)
 - [Beginners] Python [online course](https://programming-24.mooc.fi/part-1/1-getting-started)
@@ -70,7 +75,7 @@ Estimate workload:
 - [Beginners] about 20h [Python], 10h [ML] , 10h [PyTorch]
 - [All] 5h
 
-### Month 2: Nov 2024
+## Month 2: Nov 2024
 Materials
 
 - Chapter 2 Working with Text Data : read and code
@@ -82,7 +87,7 @@ PROJECT: Build a working BPE tokenizer from scratch
 Estimate workload: 10-20h
 
 
-### Month 3 : Dec 2024
+## Month 3 : Dec 2024
 
 Materials
 
@@ -98,7 +103,7 @@ Materials
 PROJECT: Code your own Transformer block with multi-head self attention
 
 
-### Month 4 : Jan 2024
+## Month 4 : Jan 2024
 
 Materials: 
 
@@ -108,7 +113,7 @@ Materials:
 CATCH-UP: Be sure to finish the BPE and Transformer projects and prior learning materials.
 
 
-### Month 5 : Feb 2025
+## Month 5 : Feb 2025
 
 Materials
 
@@ -131,7 +136,7 @@ Reading:
 PROJECT: Fine-tune the example model
 
 
-### Month 7 : Apr 2025
+## Month 7 : Apr 2025
 
 FINAL PROJECT: Build your own GPT2
 
