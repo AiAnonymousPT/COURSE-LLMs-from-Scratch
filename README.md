@@ -3,7 +3,7 @@
 # COURSE: LLMs From Scratch
 
 <br>
-<img src="Supporting/Images/AI_today.jpg" alt="AI today" width="75%">
+<img src="Supporting/Images/AI_today.jpg" alt="AI today" width="60%">
 
 <br>
 
