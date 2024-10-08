@@ -2,17 +2,18 @@
 
 # COURSE: LLMs From Scratch
 
+<br>
+<img src="Supporting/Images/AI_today.jpg" alt="AI today" width="75%">
+
+<br>
+
 ### Course Overview
 - Do you use LLMs as part of your work flow but have yet to dive into the interworkings of these models? 
 - Are you looking for a structured learning approach combined with a peer support group? 
 
 Same for us - that's why we created this course.
 
-<br>
-<img src="Supporting/Images/AI_today.jpg" alt="AI today" width="75%">
 
-***Don't let this be you!***
-<br>
 
 ## Course Topics
 - Tokenization
