@@ -1,12 +1,11 @@
 
 
-# COURSE: LLMs From Scratch
 
 
 <img src="Supporting/Images/course_logo.png" alt="LLMs From Scratch" width="50%">
 
 
-### Course Overview
+## Course Overview
 - Do you use LLMs as part of your work flow but have yet to dive into the interworkings of these models? 
 - Are you looking for a structured learning approach combined with a peer support group? 
 
@@ -14,7 +13,7 @@ Same for us - that's why we created this course.
 
 
 
-## Course Topics
+### Course Topics
 - Tokenization
 - Embeddings
 - Transformers / Attention Mechanisms
