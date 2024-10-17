@@ -19,9 +19,9 @@ You recognize the potentials of LLMs but don't know where to start?
 *Join us to build your LLM from scratch!* Learn by doing, with a supportive community.
 
 ### Who
-The program is suitable for people with a quantitative background, such as programming, engineering, empirical science, etc. 
+The program is suitable for people with a quantitative background, such as programming, engineering, empirical science, etc..
 
-Two main prerequisites are: be comfortable with computers & maths; and willing to commit ~40h/month to focused learning.
+Two main prerequisites are: be comfortable with computers & maths; and willing to commit ~40h/month to focused learning. Working knowledge of Python, Pytorch, and Machine Learning is a plus but not mandatory. We provide resources to help you catch up.
 
 ### How
 - Study: read/watch materials, run the code, and solve the exercises
@@ -71,5 +71,5 @@ The first 3 months have optional materials allowing for everyone to acquire the 
 
 ### Logistics
 - meetings are in-person in Lisbon (possible with remote participation)
-- location & time are announced in Discord & Meetup
+- location & time will be announced in Discord & Meetup
 - materials will be uploaded in this repo
