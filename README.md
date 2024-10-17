@@ -4,7 +4,7 @@
 <br>
 
 ## Overview
-"What I cannot create, I do not understand." Richard P. Feynman
+*"What I cannot create, I do not understand." Richard P. Feynman*
 
 ### What
 This is a hands-on, collaborative learning bootcamp on LLMs spreading over several months. Participants will learn to design, pretrain, and fine-tune a custom GPT-like model. The objective is to acquire thorough understanding of LLMs architecture and mechanisms. This is a foundation for further advanced use-cases and applications with LLMs.
@@ -12,7 +12,7 @@ This is a hands-on, collaborative learning bootcamp on LLMs spreading over sever
 ### Why
 Have you used LLMs but remain curious/dubious about how they work?
 You want to learn about LLMs but find it overwhelming?
-You recognize the potential of LLMs but don't know where to start?
+You recognize the potentials of LLMs but don't know where to start?
 Join us to build your LLM from scratch! Learn by doing, with a supportive community.
 
 ### Who
@@ -50,7 +50,7 @@ We plan to meet every 3/4 weeks, around the last week of the month.
 
 We work with curated resources, most of which are publicly available. 
 
-However, the backbone is the book: [*Build a Large Language Model From Scratch*, by Sebastian Raschka](https://www.manning.com/books/build-a-large-language-model-from-scratch), and the accompanying [Github repo](https://github.com/rasbt/LLMs-from-scratch)
+However, the backbone is the book: [*Build a Large Language Model From Scratch*, by Sebastian Raschka](https://www.manning.com/books/build-a-large-language-model-from-scratch), and the accompanying [Github repo](https://github.com/rasbt/LLMs-from-scratch). It's recommended that you get a copy for yourself.
 
 The first 3 months have optional materials allowing for everyone to acquire the fundamental knowledge required to build LLMs.
 
@@ -61,3 +61,4 @@ The first 3 months have optional materials allowing for everyone to acquire the 
 2) Build your Transformer architecture with multi-head self-attention
 3) Pre-train and fine-tune an LLM, based on your own dataset and hardware.
 4) Build your own GPT-2, fine-tune it for your usecase
+
