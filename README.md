@@ -70,6 +70,6 @@ The first 3 months have optional materials allowing for everyone to acquire the 
 <br>
 
 ### Logistics
-- meetings are in-person in Lisbon (possible with remote participation)
+- meetings are in-person
 - location & time will be announced in Discord & Meetup
 - materials will be uploaded in this repo
