@@ -32,5 +32,5 @@ Please schedule your time accordingly.
 
 ## Meeting Agenda
 - Summary, code review
-- Group discussion: tokenization
+- Group discussion: tokenization strategies
 - Q&A
