@@ -67,3 +67,8 @@ The first 3 months have optional materials allowing for everyone to acquire the 
 3) Pre-train and fine-tune an LLM, based on your own dataset and hardware.
 4) Build your own GPT-2, fine-tune it for your usecase
 
+<br>
+
+### Logistics
+- meetings are in-person, location & time will beannounced in Discord & Meetup
+- materials will be uploaded in this repo
