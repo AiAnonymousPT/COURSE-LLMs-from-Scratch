@@ -6,7 +6,7 @@ Mandatory materials are required for everyone to complete before each meeting.
 
 Because we come from different backgrounds, we have vetted resources to help everyone get up to speed, spread out within the first 3 months. 
 
-Optional materials are up to personal levels. This will prepare you for the upcoming meetings.
+Optional materials are warm-ups for Python & Machine Learning. This will prepare you for the upcoming meetings.
 
 Please schedule your time accordingly.
 

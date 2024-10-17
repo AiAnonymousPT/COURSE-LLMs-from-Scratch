@@ -34,5 +34,3 @@ Please schedule your time accordingly.
 - Summary, code review
 - Group discussion: tokenization
 - Q&A
-
-
