@@ -1,25 +1,41 @@
-# Meeting 0 (Oct 2024): Introduction
+# Meeting 0: Getting started
 
-Welcome to the start of this course! 
+Welcome to the start of the program!
 
-Because we all will be coming from a variety of backgrounds and relative expertise, we have put together a number of resources to help get you up to speed. Please take some time to review these materials before our first meeting. Only the material labeled [All] is required.
+Mandatory materials are required for everyone to complete before each meeting.
 
-### Materials
-- [Beginners] Intro to [LLMs Karpathy video](https://www.youtube.com/watch?v=zjkBMFhNj_g&t=1s&ab_channel=AndrejKarpathy)
-- [Beginners] Python [online course](https://programming-24.mooc.fi/part-1/1-getting-started)
-- [Beginners] [Kaggle ML learning modules](https://www.kaggle.com/learn) (first 6 modules)
-- [Beginners] [Deep Learning Fundamentals](https://lightning.ai/courses/deep-learning-fundamentals/): Modules 1-3
-- [Beginners] Course Text Book: Appendix A: Intro to Pytorch
-- [All] Google [crash course: What are LLMs](https://developers.google.com/machine-learning/crash-course/llm)
-- [All] Read: Chapter 1 of the Book
-- [BONUS] LLM-Workshop-2024: [Overview of the Course Textbook in 3 Hours](https://github.com/rasbt/LLM-workshop-2024)
+Because we come from different backgrounds, we have vetted resources to help everyone get up to speed, spread out within the first 3 months. 
 
-Estimate workload:
+Optional materials are up to personal levels. This will prepare you for the upcoming meetings.
 
-- [Beginners] about 20h [Python], 10h [ML] , 10h [PyTorch]
-- [All] 5h
+Please schedule your time accordingly.
 
-## First Meeting Agenda: 
-- Course overview plan 
-- Setup workflow, align terminologies 
-- Python & Pytorch warmup (quickly train a NN)
+## Materials
+
+- *Mandatory*:
+  - Chapter 1: Understanding LLMs
+  - Google crash course: [what are LLMs](https://developers.google.com/machine-learning/crash-course/llm)
+  - Introduction to LLMs: [1h talk by Andrej Karpathy](https://www.youtube.com/watch?v=zjkBMFhNj_g&t=1s&ab_channel=AndrejKarpathy)         
+
+&nbsp;
+
+- *Optional*: 
+
+  - Python fundamentals: [online course](https://programming-24.mooc.fi/part-1/1-getting-started)
+  - Introduction to ML: [Kaggle ML modules](https://www.kaggle.com/learn/intro-to-machine-learning)
+  - Skimming: [LLM-Workshop-2024: 4 hours](https://github.com/rasbt/LLM-workshop-2024) - overview: a tiny & stripped out version
+
+&nbsp;
+
+- *Estimated workload*:
+  - mandatory: 10h
+  - optional: 20h
+
+&nbsp;
+
+## Meeting Agenda
+- Icebreakers, plan
+- Presentation: setup workflow, align terminologies
+- Q&A
+
+
