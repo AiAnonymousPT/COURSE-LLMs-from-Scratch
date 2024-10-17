@@ -16,7 +16,7 @@ You recognize the potential of LLMs but don't know where to start?
 Join us to build your LLM from scratch! Learn by doing, with a supportive community.
 
 ### Who
-The program is suitable for people with a quantitative background, such as programming, empirical science, engineering, etc. Two main prerequisites are: be comfortable with computers & maths; and willing to commit ~40h/month to focused learning.
+The program is suitable for people with a quantitative background, such as programming, engineering, empirical science, etc. Two main prerequisites are: be comfortable with computers & maths; and willing to commit ~40h/month to focused learning.
 
 ### How
 - Study: read/watch materials, run the code, and solve the exercises
