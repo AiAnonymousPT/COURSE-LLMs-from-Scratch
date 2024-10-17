@@ -7,7 +7,7 @@
 *"What I cannot create, I do not understand." Richard P. Feynman*
 
 ### What
-This is a hands-on, collaborative learning bootcamp on LLMs spreading over several months. Participants will learn to design, pretrain, and fine-tune a custom GPT-like model. The objective is to acquire thorough understanding of LLMs architecture and mechanisms. This is a foundation for further advanced use-cases and applications with LLMs.
+This is a hands-on, collaborative learning bootcamp focusing on Large Language Models (LLMs) spanning several months. Participants will learn to design, pretrain, and fine-tune a custom GPT-like model. The objective is to acquire a thorough understanding of GPT's architecture and mechanisms. This will provide a solide foundation for advanced use-cases and applications with LLMs.
 
 ### Why
 Have you used LLMs but remain curious/dubious about how they work?
