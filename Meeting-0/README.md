@@ -22,6 +22,7 @@ Please schedule your time accordingly.
 - *Optional*: 
 
   - Python fundamentals: [online course](https://programming-24.mooc.fi/part-1/1-getting-started)
+  - Introduction to PyTorch: [Deep Learning Fundamentals](https://lightning.ai/courses/deep-learning-fundamentals/)
   - Introduction to ML: [Kaggle ML modules](https://www.kaggle.com/learn/intro-to-machine-learning)
   - Skimming: [LLM-Workshop-2024: 4 hours](https://github.com/rasbt/LLM-workshop-2024) - overview: a tiny & stripped out version
 
