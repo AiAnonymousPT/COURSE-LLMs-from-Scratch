@@ -38,7 +38,7 @@ We plan to meet every 3/4 weeks, around the last week of the month.
   - intro to key concepts of LLMs, setup workflow, Python/Machine Learning warm-up.
 - Month 1 [Tokenization & Embeddings](Meeting-1/README.md) - Mon, Nov 25
   - working with text data, basics of NLP, Pytorch/Deep Learning fundamentals
-- Month 2 [Project: build your own tokenizer](Meeting-2/README.md) - Mon, Jan 6
+- Month 2 [Project: build your own tokenizer](Meeting-2/README.md) - Mon, Jan 6 (hybrid, TBD)
   - build your GPT-2 tokenizer from scratch
 - Month 3 [Attention Mechanisms](Meeting-3/README.md) - Mon, Jan 27
   - understanding multi-head self-attention and its critical role in Transformers
