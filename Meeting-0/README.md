@@ -1,5 +1,7 @@
 # Meeting 0: Getting started
 
+[MEETING SLIDES](https://docs.google.com/presentation/d/1o3UZ4H_boHtBDgajV6EHhKWhjeUTRbY3NGF-fUUeK5s/edit?usp=sharing)
+
 Welcome to the start of the program!
 
 Mandatory materials are required for everyone to complete before each meeting.
