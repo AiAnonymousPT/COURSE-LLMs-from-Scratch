@@ -44,11 +44,11 @@ We plan to meet every 3/4 weeks, around the last week of the month.
   - understanding multi-head self-attention and its critical role in Transformers
 - Month 4 [Transformer & GPT Architecture](Meeting-4/README.md) - Mon, Feb 24
   - build GPT architecture in Pytorch, understand the inner works of Transformers
-- Month 5 [Pretraining LLMs](Meeting-5/README.md) - Mon, Mar 24
+- Month 5 [Pretraining LLMs](Meeting-5/README.md) - Wes, Apr 2
   - large-scale pretraining on unlabeled data, and training strategies
-- Month 6 [Fine-tuning LLMs](Meeting-6/README.md) - Mon, Apr 21
+- Month 6 [Fine-tuning LLMs](Meeting-6/README.md) - Mon, May 5
   - customize your LLM with fine-tuning, efficient fine-tuning, and instruction fine-tuning
-- Month 7 [Final Project: build your own GPT-2](Meeting-7/README.md) - Mon, May 26
+- Month 7 [Final Project: build your own GPT-2](Meeting-7/README.md) - June TBD
   - build and fine-tune your LLM for your use-case, showcase projects, share insights
 
 <br>
