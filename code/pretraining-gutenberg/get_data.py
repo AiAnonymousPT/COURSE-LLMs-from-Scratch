@@ -1,7 +1,7 @@
 import requests
 import os
 
-def download_gutenberg_books(num_books=10, output_dir="data/raw"):
+def download_gutenberg_books(num_books=50, output_dir="data/raw"):
     """
     Downloads the text of the top N books from Project Gutenberg and saves them as .txt files.
 
