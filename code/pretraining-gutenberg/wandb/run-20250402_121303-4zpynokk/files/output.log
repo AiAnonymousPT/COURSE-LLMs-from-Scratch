@@ -1,0 +1,39 @@
+Tokenizing file 1 of 10: data/preprocessed/combined_1.txt
+Training ...
+Ep 1 (Step 0): Train loss 10.980, Val loss 11.007
+Every effort moves you executedrolley Duncan Shrinede Winning Wastelandstretched Dia Meng horizontally restore knesold One Master SomWASHINGTON retract horizontally restore Nikolimport BUT adul wherein contradictory needy Recorded Wastelandstretched Dia Meng horizontallyne longstanding single Savannahicial Receiveroval performed Marsh 90WASHINGTON retract horizontally restore kne murder
+Batch 100/27743 processed in 0h 0m 47s
+Total time elapsed: 0h 0m 51s
+ETA for remaining batches: 3h 56m 33s
+Completion: 0.36%
+Ep 1 (Step 100): Train loss 10.420, Val loss 10.543
+Batch 200/27743 processed in 0h 0m 25s
+Total time elapsed: 0h 1m 17s
+ETA for remaining batches: 2h 56m 47s
+Completion: 0.72%
+Ep 1 (Step 200): Train loss 9.506, Val loss 9.557
+Batch 300/27743 processed in 0h 0m 25s
+Total time elapsed: 0h 1m 42s
+ETA for remaining batches: 2h 35m 40s
+Completion: 1.08%
+Ep 1 (Step 300): Train loss 8.468, Val loss 8.430
+Batch 400/27743 processed in 0h 0m 24s
+Total time elapsed: 0h 2m 7s
+ETA for remaining batches: 2h 24m 48s
+Completion: 1.44%
+Ep 1 (Step 400): Train loss 6.938, Val loss 7.658
+Batch 500/27743 processed in 0h 0m 24s
+Total time elapsed: 0h 2m 31s
+ETA for remaining batches: 2h 17m 44s
+Completion: 1.80%
+Ep 1 (Step 500): Train loss 6.829, Val loss 7.303
+Batch 600/27743 processed in 0h 0m 25s
+Total time elapsed: 0h 2m 57s
+ETA for remaining batches: 2h 13m 38s
+Completion: 2.16%
+Ep 1 (Step 600): Train loss 6.191, Val loss 7.087
+Batch 700/27743 processed in 0h 0m 24s
+Total time elapsed: 0h 3m 21s
+ETA for remaining batches: 2h 9m 52s
+Completion: 2.52%
+Saved model_checkpoints/model_pg_700_interrupted.pth

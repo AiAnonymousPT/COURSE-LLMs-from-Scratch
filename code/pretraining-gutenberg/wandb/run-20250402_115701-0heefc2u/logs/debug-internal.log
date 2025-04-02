@@ -1,0 +1,16 @@
+{"time":"2025-04-02T11:57:01.912241+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/Users/mark/code/aia/LLMs-from-Scratch/code/pretraining-gutenberg/wandb/run-20250402_115701-0heefc2u/logs/debug-core.log"}
+{"time":"2025-04-02T11:57:02.198836+01:00","level":"INFO","msg":"created new stream","id":"0heefc2u"}
+{"time":"2025-04-02T11:57:02.198865+01:00","level":"INFO","msg":"stream: started","id":"0heefc2u"}
+{"time":"2025-04-02T11:57:02.198877+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"0heefc2u"}
+{"time":"2025-04-02T11:57:02.198886+01:00","level":"INFO","msg":"handler: started","stream_id":"0heefc2u"}
+{"time":"2025-04-02T11:57:02.19889+01:00","level":"INFO","msg":"sender: started","stream_id":"0heefc2u"}
+{"time":"2025-04-02T11:57:02.415925+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-02T12:01:24.627062+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-02T12:01:24.627236+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-02T12:01:25.404837+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-02T12:01:25.634966+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console lines 9-13","runtime_seconds":0.229819667}],"total_operations":1}}
+{"time":"2025-04-02T12:01:25.648051+01:00","level":"INFO","msg":"stream: closing","id":"0heefc2u"}
+{"time":"2025-04-02T12:01:25.648114+01:00","level":"INFO","msg":"handler: closed","stream_id":"0heefc2u"}
+{"time":"2025-04-02T12:01:25.648145+01:00","level":"INFO","msg":"sender: closed","stream_id":"0heefc2u"}
+{"time":"2025-04-02T12:01:25.648131+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"0heefc2u"}
+{"time":"2025-04-02T12:01:25.648396+01:00","level":"INFO","msg":"stream: closed","id":"0heefc2u"}

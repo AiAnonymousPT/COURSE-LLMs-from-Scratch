@@ -17,11 +17,9 @@ from pathlib import Path
 import time
 import tiktoken
 import torch
+import wandb
 
-
-# For llms_from_scratch installation instructions, see:
-# https://github.com/rasbt/LLMs-from-scratch/tree/main/pkg
-from utils.gpt import create_dataloader_v1, GPTModel, generate_and_print_sample, calc_loss_batch, evaluate_model, plot_losses
+from utils.gpt import create_dataloader_v1, create_dataloader_v2, GPTModel, generate_and_print_sample, calc_loss_batch, evaluate_model, plot_losses
 
 
 def read_text_file(file_path):
@@ -32,7 +30,7 @@ def read_text_file(file_path):
 
 def create_dataloaders(text_data, train_ratio, batch_size, max_length, stride, num_workers=0):
     split_idx = int(train_ratio * len(text_data))
-    train_loader = create_dataloader_v1(
+    train_loader = create_dataloader_v2(
         text_data[:split_idx],
         batch_size=batch_size,
         max_length=max_length,
@@ -41,7 +39,7 @@ def create_dataloaders(text_data, train_ratio, batch_size, max_length, stride, n
         shuffle=True,
         num_workers=num_workers
     )
-    val_loader = create_dataloader_v1(
+    val_loader = create_dataloader_v2(
         text_data[split_idx:],
         batch_size=batch_size,
         max_length=max_length,
@@ -59,26 +57,29 @@ def convert_time(seconds):
     return int(hours), int(minutes), int(seconds)
 
 
-def print_eta(start_time, book_start_time, index, total_files):
-    book_end_time = time.time()  # End time of processing this book
-    elapsed_time = book_end_time - book_start_time
-    total_elapsed_time = book_end_time - start_time
-    books_remaining = total_files - index
-    average_time_per_book = total_elapsed_time / index
-    eta = average_time_per_book * books_remaining
+def print_eta(start_time, batch_start_time, batch_index, total_batches):
+    batch_end_time = time.time()  # End time of processing this batch
+    elapsed_time = batch_end_time - batch_start_time
+    total_elapsed_time = batch_end_time - start_time
+    batches_remaining = total_batches - batch_index
+    
+    # Calculate average time per batch based on batches processed so far
+    average_time_per_batch = total_elapsed_time / batch_index
+    eta = average_time_per_batch * batches_remaining
 
-    book_h, book_m, book_s = convert_time(elapsed_time)
+    batch_h, batch_m, batch_s = convert_time(elapsed_time)
     total_h, total_m, total_s = convert_time(total_elapsed_time)
     eta_h, eta_m, eta_s = convert_time(eta)
 
-    print(f"Book processed {book_h}h {book_m}m {book_s}s"
-          f"\nTotal time elapsed {total_h}h {total_m}m {total_s}s"
-          f"\nETA for remaining books: {eta_h}h {eta_m}m {eta_s}s")
+    print(f"Batch {batch_index}/{total_batches} processed in {batch_h}h {batch_m}m {batch_s}s"
+          f"\nTotal time elapsed: {total_h}h {total_m}m {total_s}s"
+          f"\nETA for remaining batches: {eta_h}h {eta_m}m {eta_s}s"
+          f"\nCompletion: {(batch_index/total_batches)*100:.2f}%")
 
 
 def train_model_simple(model, optimizer, device, n_epochs,
                        eval_freq, eval_iter, print_sample_iter, start_context,
-                       output_dir, save_ckpt_freq, tokenizer,
+                       output_dir, save_ckpt_freq, tokenizer, run,
                        batch_size=1024, train_ratio=0.90):
 
     train_losses, val_losses, track_tokens_seen = [], [], []
@@ -90,10 +91,10 @@ def train_model_simple(model, optimizer, device, n_epochs,
         for epoch in range(n_epochs):
 
             # Iterate over the books in the training corpus
-            for index, file_path in enumerate(all_files, 1):
+            for index, file_path in enumerate(preprocessed_files, 1):
                 book_start_time = time.time()
                 text_data = read_text_file(file_path) + " <|endoftext|> "
-                print(f"Tokenizing file {index} of {total_files}: {file_path}")
+                print(f"Tokenizing file {index}: {file_path}")
 
                 # Initialize new data loaders for each book
                 train_loader, val_loader = create_dataloaders(
@@ -102,11 +103,19 @@ def train_model_simple(model, optimizer, device, n_epochs,
                     batch_size=batch_size,
                     max_length=GPT_CONFIG_124M["context_length"],
                     stride=GPT_CONFIG_124M["context_length"],
-                    num_workers=0
+                    num_workers=2
                 )
                 print("Training ...")
                 model.train()
-                for input_batch, target_batch in train_loader:
+                
+                total_batches = len(train_loader)
+                batch_start_time = time.time()
+                
+                for batch_idx, (input_batch, target_batch) in enumerate(train_loader, 1):
+                    if batch_idx % 100 == 0:
+                        print_eta(start_time, batch_start_time, batch_idx, total_batches)
+                        batch_start_time = time.time()  # Reset batch start time
+                        
                     optimizer.zero_grad()
                     loss = calc_loss_batch(input_batch, target_batch, model, device)
                     loss.backward()
@@ -118,6 +127,9 @@ def train_model_simple(model, optimizer, device, n_epochs,
                     if global_step % eval_freq == 0:
                         train_loss, val_loss = evaluate_model(
                             model, train_loader, val_loader, device, eval_iter)
+                        # log to WandB
+                        run.log({"train_loss": train_loss, "val_loss": val_loss})
+                        
                         train_losses.append(train_loss)
                         val_losses.append(val_loss)
                         track_tokens_seen.append(tokens_seen)
@@ -135,13 +147,12 @@ def train_model_simple(model, optimizer, device, n_epochs,
                     torch.save(model.state_dict(), file_name)
                     print(f"Saved {file_name}")
 
-                print_eta(start_time, book_start_time, index, total_files)
-
     except KeyboardInterrupt:
         file_name = output_dir / f"model_pg_{global_step}_interrupted.pth"
         torch.save(model.state_dict(), file_name)
         print(f"Saved {file_name}")
 
+    run.finish()
     return train_losses, val_losses, track_tokens_seen
 
 
@@ -150,7 +161,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='GPT Model Training Configuration')
 
     parser.add_argument('--data_dir', type=str, default='data/raw',
-                        help='Directory containing the training data')
+                        help='Directory containing the raw data')
+    parser.add_argument('--preprocessed_dir', type=str, default='data/preprocessed',
+                        help='Directory containing the preprocessed data')
     parser.add_argument('--output_dir', type=str, default='model_checkpoints',
                         help='Directory where the model checkpoints will be saved')
     parser.add_argument('--n_epochs', type=int, default=1,
@@ -213,6 +226,11 @@ if __name__ == "__main__":
     all_files = [os.path.join(path, name) for path, subdirs, files
                  in os.walk(data_dir) for name in files if name.endswith((".txt"))]
     total_files = len(all_files)
+    
+    preprocessed_dir = args.preprocessed_dir
+    preprocessed_files = [os.path.join(path, name) for path, subdirs, files
+                 in os.walk(preprocessed_dir) for name in files if name.endswith((".txt"))]
+   
 
     if total_files == 0:
         print("No training text files found. Make sure you "
@@ -222,6 +240,24 @@ if __name__ == "__main__":
 
     output_dir = Path(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Start a new wandb run to track this script.
+    run = wandb.init(
+        # Set the wandb entity where your project will be logged (generally your team name).
+        entity="mswaringen",
+        # Set the wandb project where this run will be logged.
+        project="Pretraining-Gutenberg",
+        # Track hyperparameters and run metadata.
+        config={
+            "learning_rate": args.lr,
+            "architecture": "GPT2",
+            "dataset": "Gutenberg",
+            "book_count": total_files,
+            "epochs": args.n_epochs,
+            "batch_size": args.batch_size,
+            "device": device
+        },
+    )
 
     train_losses, val_losses, tokens_seen = train_model_simple(
         model, optimizer, device,
@@ -233,7 +269,8 @@ if __name__ == "__main__":
         output_dir=output_dir,
         save_ckpt_freq=args.save_ckpt_freq,
         start_context="Every effort moves you",
-        tokenizer=tokenizer
+        tokenizer=tokenizer,
+        run=run
     )
 
     epochs_tensor = torch.linspace(0, args.n_epochs, len(train_losses))

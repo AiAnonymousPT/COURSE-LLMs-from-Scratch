@@ -52,6 +52,53 @@ def create_dataloader_v1(txt, batch_size=4, max_length=256,
 
     return dataloader
 
+# New batch processing dataset implementation
+class GPTDatasetBatch(Dataset):
+    def __init__(self, txt, tokenizer, max_length, stride, chunk_size=1000000):
+        self.input_ids = []
+        self.target_ids = []
+
+        # Process text in large chunks to avoid memory issues
+        text_length = len(txt)
+        chunks = []
+        
+        # Split the text into manageable chunks for batch processing
+        for i in range(0, text_length, chunk_size):
+            chunks.append(txt[i:min(i + chunk_size, text_length)])
+        
+        # Tokenize all chunks in parallel
+        all_tokens = []
+        for chunk_tokens in tokenizer.encode_batch(chunks, allowed_special={"<|endoftext|>"}, num_threads=4):
+            all_tokens.extend(chunk_tokens)
+        
+        # Use a sliding window to create input/target pairs
+        for i in range(0, len(all_tokens) - max_length, stride):
+            input_chunk = all_tokens[i:i + max_length]
+            target_chunk = all_tokens[i + 1: i + max_length + 1]
+            self.input_ids.append(torch.tensor(input_chunk))
+            self.target_ids.append(torch.tensor(target_chunk))
+
+    def __len__(self):
+        return len(self.input_ids)
+
+    def __getitem__(self, idx):
+        return self.input_ids[idx], self.target_ids[idx]
+
+# uses GPTDatasetBatch
+def create_dataloader_v2(txt, batch_size=4, max_length=256,
+                         stride=128, shuffle=True, drop_last=True, num_workers=2):
+    # Initialize the tokenizer
+    tokenizer = tiktoken.get_encoding("gpt2")
+
+    # Create dataset - use the batch version for better performance
+    dataset = GPTDatasetBatch(txt, tokenizer, max_length, stride)
+
+    # Create dataloader
+    dataloader = DataLoader(
+        dataset, batch_size=batch_size, shuffle=shuffle, drop_last=drop_last, num_workers=num_workers)
+
+    return dataloader
+
 
 #####################################
 # Chapter 3

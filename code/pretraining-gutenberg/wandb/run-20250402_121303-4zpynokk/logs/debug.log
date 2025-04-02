@@ -1,0 +1,29 @@
+2025-04-02 12:13:03,898 INFO    MainThread:21050 [wandb_setup.py:_flush():67] Current SDK version is 0.19.9
+2025-04-02 12:13:03,899 INFO    MainThread:21050 [wandb_setup.py:_flush():67] Configure stats pid to 21050
+2025-04-02 12:13:03,899 INFO    MainThread:21050 [wandb_setup.py:_flush():67] Loading settings from /Users/mark/.config/wandb/settings
+2025-04-02 12:13:03,899 INFO    MainThread:21050 [wandb_setup.py:_flush():67] Loading settings from /Users/mark/code/aia/LLMs-from-Scratch/code/pretraining-gutenberg/wandb/settings
+2025-04-02 12:13:03,899 INFO    MainThread:21050 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-04-02 12:13:03,899 INFO    MainThread:21050 [wandb_init.py:setup_run_log_directory():662] Logging user logs to /Users/mark/code/aia/LLMs-from-Scratch/code/pretraining-gutenberg/wandb/run-20250402_121303-4zpynokk/logs/debug.log
+2025-04-02 12:13:03,899 INFO    MainThread:21050 [wandb_init.py:setup_run_log_directory():663] Logging internal logs to /Users/mark/code/aia/LLMs-from-Scratch/code/pretraining-gutenberg/wandb/run-20250402_121303-4zpynokk/logs/debug-internal.log
+2025-04-02 12:13:03,899 INFO    MainThread:21050 [wandb_init.py:init():781] calling init triggers
+2025-04-02 12:13:03,899 INFO    MainThread:21050 [wandb_init.py:init():786] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0005, 'architecture': 'GPT2', 'dataset': 'Gutenberg', 'book_count': 10, 'epochs': 1, 'batch_size': 4, 'device': 'mps', '_wandb': {}}
+2025-04-02 12:13:03,899 INFO    MainThread:21050 [wandb_init.py:init():809] starting backend
+2025-04-02 12:13:03,899 INFO    MainThread:21050 [wandb_init.py:init():813] sending inform_init request
+2025-04-02 12:13:03,925 INFO    MainThread:21050 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2025-04-02 12:13:03,925 INFO    MainThread:21050 [wandb_init.py:init():823] backend started and connected
+2025-04-02 12:13:03,927 INFO    MainThread:21050 [wandb_init.py:init():915] updated telemetry
+2025-04-02 12:13:03,946 INFO    MainThread:21050 [wandb_init.py:init():939] communicating run to backend with 90.0 second timeout
+2025-04-02 12:13:04,705 INFO    MainThread:21050 [wandb_init.py:init():1014] starting run threads in backend
+2025-04-02 12:13:04,724 INFO    MainThread:21050 [wandb_run.py:_console_start():2454] atexit reg
+2025-04-02 12:13:04,725 INFO    MainThread:21050 [wandb_run.py:_redirect():2306] redirect: wrap_raw
+2025-04-02 12:13:04,725 INFO    MainThread:21050 [wandb_run.py:_redirect():2371] Wrapping output streams.
+2025-04-02 12:13:04,725 INFO    MainThread:21050 [wandb_run.py:_redirect():2394] Redirects installed.
+2025-04-02 12:13:04,726 INFO    MainThread:21050 [wandb_init.py:init():1056] run started, returning control to user process
+2025-04-02 12:16:35,195 INFO    MainThread:21050 [wandb_run.py:_finish():2189] finishing run mswaringen/Pretraining-Gutenberg/4zpynokk
+2025-04-02 12:16:35,195 INFO    MainThread:21050 [wandb_run.py:_atexit_cleanup():2419] got exitcode: 0
+2025-04-02 12:16:35,196 INFO    MainThread:21050 [wandb_run.py:_restore():2401] restore
+2025-04-02 12:16:35,196 INFO    MainThread:21050 [wandb_run.py:_restore():2407] restore done
+2025-04-02 12:16:36,235 INFO    MainThread:21050 [wandb_run.py:_footer_history_summary_info():4064] rendering history
+2025-04-02 12:16:36,236 INFO    MainThread:21050 [wandb_run.py:_footer_history_summary_info():4096] rendering summary
+2025-04-02 12:16:36,236 INFO    MainThread:21050 [wandb_run.py:_footer_sync_info():4025] logging synced files
