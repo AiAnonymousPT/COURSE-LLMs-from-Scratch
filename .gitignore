@@ -4,3 +4,4 @@ code/pretraining-gutenberg/data
 code/pretraining-gutenberg/model_checkpoints
 code/pretraining-gutenberg/utils/__pycache__
 code/.venv
+code/pretraining-gutenberg/wandb
